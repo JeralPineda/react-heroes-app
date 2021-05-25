@@ -1,0 +1,23 @@
+.card-color {
+   background-color: rgb(197, 199, 206);
+   color: #222;
+   border-color: rgb(197, 199, 206);
+   border-radius: 5px !important;
+   box-shadow: none;
+}
+.card:hover {
+   -webkit-transition: 1s linear;
+   transition: 0.5s linear;
+   box-shadow: 0 8px 18px -8px rgba(19, 20, 24, 0.973);
+}
+
+.color-screen {
+   background-color: rgba(211, 212, 218, 0.726);
+   color: #222;
+}
+
+/* .link:hover {
+   font-size: 17px;
+   -webkit-transition: 1s linear;
+   transition: 1s linear;
+} */

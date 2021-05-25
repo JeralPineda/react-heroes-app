@@ -1,0 +1,26 @@
+body {
+   background-color: rgb(224, 226, 235);
+   color: #222;
+}
+
+.container {
+   margin-top: 9rem !important;
+}
+
+.card {
+   background-color: rgb(197, 199, 206);
+   color: #222;
+   border-color: rgb(197, 199, 206);
+   border-radius: 5px !important;
+   box-shadow: 0 8px 18px -8px rgba(19, 20, 24, 0.973);
+}
+
+.card-body a {
+   text-decoration: none;
+   color: #222;
+}
+
+.card-body a:hover {
+   color: #222;
+   width: 5px;
+}
