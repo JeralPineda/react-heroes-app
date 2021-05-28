@@ -14,8 +14,6 @@ export const Navbar = () => {
 
    const history = useHistory();
 
-   console.log(history);
-
    //    Cerrar sesión
    const handleLogout = () => {
       history.replace('/login');
