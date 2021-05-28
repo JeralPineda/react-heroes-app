@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useHistory } from 'react-router-dom';
 import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
 import './navbar.css';
 
@@ -8,7 +9,21 @@ export const Navbar = () => {
    // Extraer la información del usuario logeado
    const {
       user: { name },
+      dispatch,
    } = useContext(AuthContext);
+
+   const history = useHistory();
+
+   console.log(history);
+
+   //    Cerrar sesión
+   const handleLogout = () => {
+      history.replace('/login');
+
+      dispatch({
+         type: types.logout,
+      });
+   };
 
    return (
       <nav className='navbar navbar-expand-sm navbar-light bg-light'>
@@ -36,9 +51,9 @@ export const Navbar = () => {
             <ul className='navbar-nav ml-auto'>
                <span className='nav-item nav-link text-info'>{name}</span>
 
-               <NavLink activeClassName='active' className='nav-item nav-link' exact to='/login'>
+               <button onClick={handleLogout} className='nav-item nav-link btn btn-light'>
                   Logout
-               </NavLink>
+               </button>
             </ul>
          </div>
       </nav>
