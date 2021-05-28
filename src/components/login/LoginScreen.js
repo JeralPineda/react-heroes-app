@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
 import './login.css';
 
 export const LoginScreen = ({ history }) => {
+   const { dispatch } = useContext(AuthContext);
+
    const handleLogin = () => {
       // Navegamos a otra pantalla
-      history.push('/');
+      //   history.push('/');
+
+      //   Disparar acción
+      dispatch({
+         type: types.login,
+         payload: {
+            name: 'Jeral',
+         },
+      });
+
       history.replace('/'); //remplaza en la historia
    };
 
