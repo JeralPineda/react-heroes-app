@@ -8,8 +8,8 @@ export const LoginScreen = ({ history }) => {
    const { dispatch } = useContext(AuthContext);
 
    const handleLogin = () => {
-      // Navegamos a otra pantalla
-      //   history.push('/');
+      // Obtenemos la ultima ruta visitada, si no hay ruta guardada en localStorage redirecciona a la ruta principal
+      const lastPath = localStorage.getItem('lastPath') || '/';
 
       //   Disparar acción
       dispatch({
@@ -19,7 +19,7 @@ export const LoginScreen = ({ history }) => {
          },
       });
 
-      history.replace('/'); //remplaza en la historia
+      history.replace(lastPath); //remplaza en la historia
    };
 
    return (
