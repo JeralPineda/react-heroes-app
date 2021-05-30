@@ -10,4 +10,7 @@ Restaurar los módulos de node
 npm install
 ```
 
-![app](./public/img-app.png)
+![login](./public/img-1.png)
+![dashboard](./public/img-2.png)
+![hero](./public/img-3.png)
+![searchHero](./public/img-4.png)
