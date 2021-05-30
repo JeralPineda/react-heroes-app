@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <SearchScreen /> debe de mostrar a Flash y el input con el valor del queryString 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control defaultInput"
+          name="searchHero"
+          onChange={[Function]}
+          placeholder="Busca tu héroe"
+          type="text"
+          value="flash"
+        />
+      </form>
+      <button
+        className="btn m-1 btn-block btn-outline-secondary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Buscar...
+      </button>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="card card-color mb-1 ms-3"
+        style={
+          Object {
+            "maxWidth": 540,
+          }
+        }
+      >
+        <div
+          className="row no-gutters"
+        >
+          <div
+            className="col-md-4"
+          >
+            <img
+              alt="Flash"
+              className="card-img"
+              src="./heroes/dc-flash.jpg"
+            />
+          </div>
+          <div
+            className="cold-md-8"
+          >
+            <div
+              className="card-body"
+            >
+              <h5
+                className="card-title"
+              >
+                Flash
+              </h5>
+              <p
+                className="card-text"
+              >
+                Jay Garrick
+              </p>
+               && 
+              <p
+                className="card-text"
+              >
+                Jay Garrick, Barry Allen, Wally West, Bart Allen
+              </p>
+              <p
+                className="card-text"
+              >
+                <small
+                  className="text-muted"
+                >
+                  Flash Comics #1
+                </small>
+              </p>
+              <a
+                className="link"
+                href="/hero/dc-flash"
+                onClick={[Function]}
+              >
+                Mas ..
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrar un error si no se muestra el Hero 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control defaultInput"
+          name="searchHero"
+          onChange={[Function]}
+          placeholder="Busca tu héroe"
+          type="text"
+          value="flash123"
+        />
+      </form>
+      <button
+        className="btn m-1 btn-block btn-outline-secondary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Buscar...
+      </button>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-danger"
+      >
+        No hay un héroe con 
+        flash123
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en <SearchScreen /> debe de mostrarse correctamente con valores por defecto 1`] = `
+<div>
+  <h1>
+    Search Screen
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        Search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control defaultInput"
+          name="searchHero"
+          onChange={[Function]}
+          placeholder="Busca tu héroe"
+          type="text"
+          value=""
+        />
+      </form>
+      <button
+        className="btn m-1 btn-block btn-outline-secondary"
+        onClick={[Function]}
+        type="submit"
+      >
+        Buscar...
+      </button>
+    </div>
+    <div
+      className="col-7"
+    >
+      <h4>
+        Results
+      </h4>
+      <hr />
+      <div
+        className="alert alert-info"
+      >
+        Busca un heroe
+      </div>
+    </div>
+  </div>
+</div>
+`;
