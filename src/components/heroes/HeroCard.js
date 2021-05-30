@@ -1,13 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImages';
 import './HeroCard.css';
+
+// const heroImages = require.context('../../assets/heroes', true); //webpack
 
 export const HeroCard = ({ id, superhero, alter_ego, first_appearance, characters }) => {
    return (
       <div className='card card-color mb-1 ms-3' style={{ maxWidth: 540 }}>
          <div className='row no-gutters'>
             <div className='col-md-4'>
-               <img src={`./heroes/${id}.jpg`} className='card-img' alt={superhero} />
+               <img
+                  // src={`./heroes/${id}.jpg`} //desde public/assets
+                  src={heroImages(`./${id}.jpg`).default}
+                  className='card-img'
+                  alt={superhero}
+               />
             </div>
             <div className='cold-md-8'>
                <div className='card-body'>
